@@ -93,6 +93,12 @@ app.use('*', (req, res) => {
   });
 });
 
+
+app.get('/', (req, res) => {
+  res.send('🚀 Proxy Marketplace Backend Running');
+});
+
+
 // Middleware: Error Handler
 app.use(errorHandler);
 
